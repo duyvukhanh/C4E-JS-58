@@ -25,11 +25,11 @@ console.log("Bài 3");
 let xInput = prompt("Nhập giá trị của x :");
 let x = Number(xInput)
 let y1 = 4 * (Math.pow(x, 2) + 10 * x * Math.sqrt(x) + 3 * x + 1);
-let y2Tuso = Math.sin(Math.PI * Math.pow(x, 2)) + Math.sqrt(Math.pow(x, 2) + 1);
-let y2Mauso = Math.exp(x * 2) + Math.cos((Math.PI / 4) * x);
-let y2 = y2Tuso / y2Mauso;
-console.log("y1 = "+y1)
-console.log("y2 = "+y2)
+let y2TuSo = Math.sin(Math.PI * Math.pow(x, 2)) + Math.sqrt(Math.pow(x, 2) + 1);
+let y2MauSo = Math.exp(x * 2) + Math.cos((Math.PI / 4) * x);
+let y2 = y2TuSo / y2MauSo;
+console.log("y1 = " + y1)
+console.log("y2 = " + y2)
 
 
 // homework4
@@ -37,18 +37,18 @@ console.log("Bài 4");
 let input = prompt("Nhập số tiền (VNĐ) :");
 let lenInput = input.length;
 
-numberOf100k = Math.floor(Number(input)/100000);
+numberOf100k = Math.floor(Number(input) / 100000);
 
-a = input.substring(lenInput - 1 - 4,lenInput);
-numberOf50k = Math.floor(Number(a)/50000);
+a = input.substring(lenInput - 1 - 4, lenInput);
+numberOf50k = Math.floor(Number(a) / 50000);
 
-x = Number(a) - numberOf50k*50000;
-numberOf20k = Math.floor(Number(x/20000));
+x = Number(a) - numberOf50k * 50000;
+numberOf20k = Math.floor(Number(x / 20000));
 
-y = Number(a) - numberOf50k*50000 - numberOf20k*20000;
-numberOf10k = Math.floor(Number(y/10000));
+y = Number(a) - numberOf50k * 50000 - numberOf20k * 20000;
+numberOf10k = Math.floor(Number(y / 10000));
 
-output4 = input + " vnđ = " + numberOf100k + " tờ 100k + " + numberOf50k + " tờ 50k + "   + numberOf20k + " tờ 20k + " + numberOf10k + " tờ 10k";
+output4 = input + " vnđ = " + numberOf100k + " tờ 100k + " + numberOf50k + " tờ 50k + " + numberOf20k + " tờ 20k + " + numberOf10k + " tờ 10k";
 console.log(output4);
 
 
@@ -56,7 +56,7 @@ console.log(output4);
 // homework5
 console.log("Bài 5");
 let numbInput = prompt("Nhập số 3 chữ số:");
-let sum = Number(numbInput[0]) +Number(numbInput[1])+Number(numbInput[2]);
+let sum = Number(numbInput[0]) + Number(numbInput[1]) + Number(numbInput[2]);
 console.log("Số " + numbInput + " có tổng các chữ số là " + sum);
 
 
